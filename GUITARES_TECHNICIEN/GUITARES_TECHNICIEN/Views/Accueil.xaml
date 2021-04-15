@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GUITARES_TECHNICIEN.Views.Accueil">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Projets guitares en cours"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <ListView x:Name="listeGuitare" HasUnevenRows="True" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding Nom, StringFormat='Nom : {0}'}"/>
+                                <Label Text="{Binding Etat, StringFormat='Etat : {0}'}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Entry x:Name="Nom_Bois"></Entry>
+            <Entry x:Name="Origine"></Entry>
+
+            <Button Text="Valider" Clicked="On_btn_Click"></Button>
+
+            
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

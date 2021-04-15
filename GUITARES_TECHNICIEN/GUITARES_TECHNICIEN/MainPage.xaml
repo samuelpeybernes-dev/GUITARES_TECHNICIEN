@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:GUITARES_TECHNICIEN.Views"
+             x:Class="GUITARES_TECHNICIEN.MainPage">
+
+    <FlyoutItem  Title="Menu"
+                 Shell.TabBarIsVisible="False" 
+                 FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Accueil" Icon="" IsTabStop="True" ContentTemplate="{DataTemplate views:Accueil}"/>
+        <ShellContent Title="Bois" Icon="" IsTabStop="True" ContentTemplate="{DataTemplate views:StockBois}"/>
+        <ShellContent Title="Microphones" Icon="" IsTabStop="True" ContentTemplate="{DataTemplate views:StockMicro}"/>
+        <ShellContent Title="Vibratos" Icon="" IsTabStop="True" ContentTemplate="{DataTemplate views:StockVibrato}"/>
+    </FlyoutItem>
+
+   
+</Shell>
+    
+
